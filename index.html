@@ -4,6 +4,8 @@
 <html>
     <!-- head -->
     <head>
+        <!-- link external stylesheet -->
+        <link rel="stylesheet" href="style.css">
         <!-- webpage title -->
         <title>
             Personal Portfolio
@@ -11,158 +13,164 @@
     </head>
     <!-- body -->
     <body>
-        <!-- heading -->
-        <h1>
-            Sean Widner
-        </h1>
-        <!-- subheading -->
-        <h2>
-            Software Engineering Major at NAU
-        </h2>
-        <!-- horizontal rule -->
-        <hr>
-        <!-- section heading -->
-        <h3>
-            Introduction
-        </h3>
-        <!-- paragraph -->
-        <p>
-            Hello, my name is Sean Widner and I am currently a Software Engineering Major at NAU. I have experience managing heavy workloads at school and communicating with team members in a fast paced work environment. In my freetime, I express my creativity through music composition and production. I look forward to continuing to grow my skills through hard work and collaboration.
-        </p>
-        <!-- horizontal rule -->
-        <hr>
-        <!-- section heading -->
-        <h3>
-            Skills
-        </h3>
-        <!-- paragraph -->
-        <p>
-            <ul>
-                <li>Programming</li>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Basic Command Line</li>
-                </ul>
-                <li>Music Production</li>
-                <ul>
-                    <li>FL Studio</li>
-                    <ul>
-                        <li>Mixing</li>
-                        <li>Mastering</li>
-                        <li>Composing</li>
-                        <li>Sound Design</li>
-                    </ul>
-                </ul>
-                <li>General IT</li>
-                <ul>
-                    <li>Hardware and software troubleshooting</li>
-                    <li>Operating system basics</li>
-                    <li>Software Installation</li>
-                </ul>
-            </ul>
-        <!--     Python Programming
-        line breaks 
-            <br>
-            Command Line Basics
-            <br>
-            General IT
-            <br>
-            Music Production
-            <br>
-            Adaptability
-            -->
-        </p>
-        <!-- horizontal rule -->
-        <hr>
-        <!-- section heading -->
-        <h3>
-            Projects
-        </h3>
-        <!-- paragraph -->
-        <p>
-            <b>Senior Thesis</b>: “You Could Be on Holiday Now: On the Importance of Freedom for Happiness” 
-            <br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/The_Thinker%2C_Rodin.jpg" alt="The Thinker" width="250">
-            <br>
-            <b>Coursework</b>: Completed CodeStepByStep problems in python and collaborated on coding projects with peers
-            <br>
-            <img src="./Turtlepy.PNG" alt="Python Etchasketch" width="250">
-        </p>
-        <hr>
-        <!-- section heading -->
-        <h3>
-            Education and Experience
-        </h3>
-        <!-- paragraph -->
-        <p>
-            <!-- table -->
-            <table border="1">
-                <!-- table head -->
-                <thead>
-                    <tr>
-                        <th>Arete Preparatory Academy</th>
-                        <th>Northern Arizona University</th>
-                    </tr>
-                </thead>
-                <!-- table body -->
-                <tbody>
-                    <tr>
-                        <td>
-                            Gilbert, Arizona
-                        </td>
-                        <td>
-                            Flagstaff, Arizona
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Graduated 2024
-                        </td>
-                        <td>
-                            Set to Graduate 2028
-                        </td>
-                    </tr>
-                </tbody>
-                <!-- table footer -->
-                <tfoot>
-                    <tr>
-                        <td>
-                            Highschool
-                        </td>
-                        <td>
-                            Software Engineering (BS)
-                        </td>
-                    </tr>
-                </tfoot>
+        <div class="container">
+            <!-- heading -->
+            <header>
+                <h1>
+                    Sean Widner
+                </h1>
+                <!-- subheading -->
+                <h2>
+                    Software Engineering Major at NAU
+                </h2>
+                <!-- horizontal rule -->
+            </header>
+            <!--hr-->
+            <!-- navigation sidebar -->
+            <nav>
+                <a href="#intro">Introduction</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education & Experience</a>
+                <a id="resume" href="https://drive.google.com/uc?export=download&id=1thzUxY1xd-QqjenTrO8lEH71ft8WbpTy">Download Resume Here!</a>
+            </nav>
+            <!-- main content div -->
+            <main>
+                <!-- section heading -->
+                <h3 id="intro">
+                    Introduction
+                </h3>
+                <!-- paragraph -->
+                <p>
+                    Hello, my name is Sean Widner and I am currently a Software Engineering Major at NAU. I have experience managing heavy workloads at school and communicating with team members in a fast paced work environment. In my freetime, I express my creativity through music composition and production. I look forward to continuing to grow my skills through hard work and collaboration.
+                </p>
+                <!-- horizontal rule -->
+                <!--hr-->
+                <!-- section heading -->
+                <div  id="skills">
+                    <h3>
+                        Skills
+                    </h3>
+                    <!-- paragraph -->
+                    <p>
+                        <ul class="skills-list">
+                            <li>Programming</li>
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>Basic Command Line</li>
+                            </ul>
+                            <li>Music Production</li>
+                            <ul>
+                                <li>FL Studio</li>
+                                <ul>
+                                    <li>Mixing</li>
+                                    <li>Mastering</li>
+                                    <li>Composing</li>
+                                    <li>Sound Design</li>
+                                </ul>
+                            </ul>
+                            <li>General IT</li>
+                            <ul>
+                                <li>Hardware and software troubleshooting</li>
+                                <li>Operating system basics</li>
+                                <li>Software Installation</li>
+                            </ul>
+                        </ul>
+                    </p>
+                </div> 
+                <!-- horizontal rule -->
+                <!--hr-->
+                <!-- section heading -->
+                <div id="projects">
+                    <h3>
+                        Projects
+                    </h3>
+                    <!-- paragraph -->
+                    <p>
+                        <div class="project1">
+                            <b>Senior Thesis</b>: “You Could Be on Holiday Now: On the Importance of Freedom for Happiness” 
+                            <br>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/The_Thinker%2C_Rodin.jpg" alt="The Thinker" width="250">
+                            <br>
+                        </div>
+                        <div class="project2">
+                            <b>Coursework</b>: Completed CodeStepByStep problems in python and collaborated on coding projects with peers
+                            <br>
+                            <img src="./Turtlepy.PNG" alt="Python Etchasketch" width="250">
+                        </div>
+                    </p>
+                </div>
+                <!--hr-->
+                <!-- section heading -->
+                <h3 id="education">
+                    Education and Experience
+                </h3>
+                <!-- paragraph -->
+                <p>
+                    <!-- table -->
+                    <table border="1">
+                        <!-- table head -->
+                        <thead>
+                            <tr>
+                                <th>Arete Preparatory Academy</th>
+                                <th>Northern Arizona University</th>
+                            </tr>
+                        </thead>
+                        <!-- table body -->
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Gilbert, Arizona
+                                </td>
+                                <td>
+                                    Flagstaff, Arizona
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Graduated 2024
+                                </td>
+                                <td>
+                                    Set to Graduate 2028
+                                </td>
+                            </tr>
+                        </tbody>
+                        <!-- table footer -->
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    Highschool
+                                </td>
+                                <td>
+                                    Software Engineering (BS)
+                                </td>
+                            </tr>
+                        </tfoot>
 
-            </table>
-        <!--<b>Arete Preparatory Academy,</b> Gilbert, Arizona
-            <br>
-            <i>Graduated 2024</i>
-            <br>
-            <b>Northern Arizona University,</b> Flagstaff, Arizona
-            <br>
-            <i>Set to Graduate 2028</i>--> 
-        </p>
-        <hr>
-        <!-- section heading -->
-        <h3>
-            Contact Information
-        </h3>
-        <p>
-            <b>Phone:</b> 
-            <a href="tel:+6235479086">(623)547-9086</a>
-            <br>
-            <b>Email:</b> 
-            <a href="mailto:swidner@outlook.com">swidner@outlook.com</a>
-            
-        </p>
-        <hr>
-        <h3>Resume</h3>
-        <a href="https://drive.google.com/uc?export=download&id=1thzUxY1xd-QqjenTrO8lEH71ft8WbpTy">Download Resume Here!</a>
-
+                    </table>
+                </p>
+            </main>
+            <!--hr-->
+            <footer>
+                <!-- section heading -->
+                <h3>
+                    Contact Information
+                </h3>
+                <p>
+                    <b>Phone:</b> 
+                    <a href="tel:+6235479086">(623)547-9086</a>
+                    <br>
+                    <b>Email:</b> 
+                    <a href="mailto:swidner@outlook.com">swidner@outlook.com</a>
+                    
+                </p>
+                <!--hr-->
+                
+                
+            </footer>
+        </div>
     </body>
 
 </html>
