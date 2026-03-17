@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<!-- root element -->
+<html>
+    <!-- head -->
+    <head>
+        <!-- link bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- link google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+        <!-- link external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- webpage title -->
+        <title>
+            Personal Portfolio
+        </title>
+    </head>
+    <!-- body -->
+    <body>
+        
+        <!-- heading -->
+        <header class="container-fluid bg-secondary bg-gradient text-white py-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <h1 class="display-4">Sean Widner</h1>
+                        <!-- subheading -->
+                        <p class="lead">Software Engineering Major at NAU</p>
+                        <p id="greeting" class="lead"></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        
+        <!-- sidebar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">Portfolio</a>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#intro">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="resumeBtn" class="btn btn-secondary" href="https://drive.google.com/uc?export=download&id=1thzUxY1xd-QqjenTrO8lEH71ft8WbpTy">Download Resume Here!</a>
+                        </li>
+                        <li>
+                            <p class="px-3">Resume downloads: <span id="downloadCount">0</span></p>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        </nav>
+
+        <!-- main content div -->
+        <main class="container">
+
+            <!-- intro section -->
+            <div class="row my-5" id="intro">
+                <div class="col-12">
+                    <h2 class="text-center fw-bold mb-4">Introduction</h2>
+                    <div>
+                        
+                        <!-- paragraph -->
+                        <p>
+                            Hello, my name is Sean Widner and I am currently a Software Engineering Major at NAU.
+                            I have experience managing heavy workloads at school and communicating with team members in a fast paced work environment. 
+                            In my freetime, I express my creativity through music composition and production. 
+                            I look forward to continuing to grow my skills through hard work and collaboration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill input form & button-->
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <input id="skillInput" class="form-control mb-2" type="text" placeholder="Enter a new skill">
+                    <button id="addSkillBtn" class="btn btn-primary w-100">
+                        Add Skill
+                    </button>
+                </div>
+            </div>
+
+            <!-- skills section -->
+            <div class="row g-4 my-5" id="skills">
+                <div class="col-12">
+                    <h2 class="text-center fw-bold mb-4">Skills</h2>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Programming</h5>
+                            <ul id="skillList" class="list-group list-group-flush">
+                                <li class="list-group-item">Python</li>
+                                <li class="list-group-item">Java</li>
+                                <li class="list-group-item">C#</li>
+                                <li class="list-group-item">Basic Command Line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Music Production</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Mixing</li>
+                                <li class="list-group-item">Mastering</li>
+                                <li class="list-group-item">Composing</li>
+                                <li class="list-group-item">Sound Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">General IT</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Hardware and software troubleshooting</li>
+                                <li class="list-group-item">Operating system basics</li>
+                                <li class="list-group-item">Software Installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>           
+            </div> 
+            
+            <!-- projects section -->
+            <div class="row g-4 my-5" id="projects">
+                <div class="col-12">
+                    <h2 class="text-center fw-bold mb-4">Projects</h2>
+                </div>  
+
+                <div id="projectContainer" class="row g-4"></div>
+            </div>
+            
+            <!-- Education Section -->
+            <div class="row g-4 my-5">
+                <div class="col-12">
+                    <div id="education">
+                        <h2 class="text-center fw-bold mb-4">Education and Experience</h2>
+                
+                        <!-- table -->
+                        <div id="educationTable"></div>
+                        <div id="experienceTable" class="mt-5"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+            
+        <footer class="container-fluid bg-dark text-white py-4 bg-gradient">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- section heading -->
+                        <h3>
+                            Contact Information
+                        </h3>
+                        <p>
+                            <b>Phone:</b> 
+                            <a href="tel:+6235479086">(623)547-9086</a>
+                            <br>
+                            <b>Email:</b> 
+                            <a href="mailto:swidner@outlook.com">swidner@outlook.com</a>    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
